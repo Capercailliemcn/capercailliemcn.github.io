@@ -18,7 +18,6 @@
                 <li><a href="#events">Upcoming Events</a></li>
                 <li><a href="#community">Community Highlights</a></li>
                 <li><a href="#items">Item Database</a></li>
-                <li><a href="#drop-simulator">Drop Simulator</a></li>
             </ul>
         </nav>
     </header>
@@ -32,14 +31,60 @@
                 <p>The new Season 17 of Rocket League is officially live! Starting on <strong>January 25, 2025</strong>, players can enjoy fresh rewards, challenges, and a new competitive ranking system. Season 17 brings exciting changes to both casual and ranked play, offering a new level of fun and challenge for players worldwide!</p>
                 <a href="#" class="hacker-link">Learn More About Season 17</a>
             </article>
+            <article>
+                <h3 class="hacker-text">Rocket League Update 3.12 Released</h3>
+                <p>The new patch for Rocket League brings bug fixes and several new features. Major improvements to match stability, car control adjustments, and UI updates are now live. The patch also fixes issues with cross-platform matchmaking.</p>
+                <a href="#" class="hacker-link">Read Patch Notes</a>
+            </article>
+            <article>
+                <h3 class="hacker-text">RLCS Winter Major Starts February 10</h3>
+                <p>The Rocket League Championship Series (RLCS) Winter Major will take place from <strong>February 10, 2025</strong>, with top teams from around the world competing for the title and a portion of the prize pool. This will be the first RLCS Major after the implementation of the new tournament format.</p>
+                <a href="#" class="hacker-link">Full Details</a>
+            </article>
+            <article>
+                <h3 class="hacker-text">Rocket League Announces New Car Customizations</h3>
+                <p>Rocket League is introducing exciting new car customization options, including new decals, wheels, and rare items that can be unlocked in the upcoming season. Players can expect to see more creative designs than ever before!</p>
+                <a href="#" class="hacker-link">Learn More</a>
+            </article>
         </section>
 
-        <!-- Rocket League Drop Simulator Section -->
-        <section id="drop-simulator">
-            <h2 class="hacker-text">Rocket League Drop Simulator</h2>
-            <p>Click the button below to simulate a drop and see what you get!</p>
-            <button onclick="openDrop()">Open Drop</button>
-            <div id="drop-result" class="drop-result"></div>
+        <!-- Upcoming Events Section -->
+        <section id="events">
+            <h2 class="hacker-text">Upcoming Rocket League Events</h2>
+            <ul>
+                <li>
+                    <strong>RLCS Winter Major</strong> - <span class="highlight">February 10, 2025</span>
+                    <p>Top teams from around the world will compete in this exciting event. Don’t miss the action as the Winter Major unfolds!</p>
+                </li>
+                <li>
+                    <strong>Pro-Am Tournament</strong> - <span class="highlight">February 15, 2025</span>
+                    <p>Amateur players team up with pros in this fun and competitive event. Players can sign up to participate and compete for exclusive rewards.</p>
+                </li>
+                <li>
+                    <strong>Rocket League Charity Stream</strong> - <span class="highlight">March 5, 2025</span>
+                    <p>Join the Rocket League community as we raise funds for a good cause. Exclusive in-game items and prizes will be available for donors!</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Community Highlights Section -->
+        <section id="community">
+            <h2 class="hacker-text">Community Highlights</h2>
+            <article>
+                <h3 class="hacker-text">Fan-Made Rocket League Arena "Frostbite"</h3>
+                <p>A talented fan has designed an incredible new Rocket League arena called "Frostbite". The icy environment and unique features are sure to add a fresh spin to gameplay.</p>
+                <a href="#" class="hacker-link">Learn More</a>
+            </article>
+            <article>
+                <h3 class="hacker-text">Top Trick Shots of the Month</h3>
+                <p>Every month, Rocket League players submit their best trick shots to be featured. This month, the community has voted on the top 5 trick shots!</p>
+                <a href="#" class="hacker-link">Watch the Trick Shots</a>
+            </article>
+            <article>
+                <h3 class="hacker-text">Rocket League Tournament Highlights</h3>
+                <p>Catch up on all the action from the latest Rocket League tournaments. Watch the best teams battle for supremacy in this exciting esports scene!</p>
+                <a href="#" class="hacker-link">Full Tournament Recap</a>
+            </article>
         </section>
 
         <!-- Item Database Section -->
@@ -65,70 +110,78 @@
         <p class="hacker-text">&copy; 2025 Rocket League News. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Drop Simulator -->
+    <!-- Add JavaScript to manage the item database -->
     <script>
-        // Define items by rarity for the drop simulator
-        const items = {
-            "Common": [
-                "Gizmo", "Merc", "Venom", "Road Hog", "Scarab"
-            ],
-            "Uncommon": [
-                "Takumi", "Plank", "Octane ZSR", "Paladin", "Ripper"
-            ],
-            "Rare": [
-                "Turbine", "Striker", "Chikara", "Road Hog XL"
-            ],
-            "Very Rare": [
-                "Tachyon", "Vortex", "Neothermal"
-            ],
-            "Import": [
-                "Octane", "Dominus", "Fennec", "Breakout", "Batmobile"
-            ],
-            "Exotic": [
-                "Zomba", "Endo", "Fennec Titanium White", "Apex", "Interstellar"
-            ],
-            "Black Market": [
-                "Heatwave", "Bubbly", "Mystery Decal", "Fire God", "Lightning"
-            ]
-        };
+        // Define a list of Rocket League car bodies and their rarities
+        const items = [
+            { name: "Octane", rarity: "Import" },
+            { name: "Dominus", rarity: "Import" },
+            { name: "Endo", rarity: "Exotic" },
+            { name: "Fennec", rarity: "Import" },
+            { name: "Zomba", rarity: "Exotic" },
+            { name: "Striker", rarity: "Rare" },
+            { name: "Alpha Boost", rarity: "Very Rare" },
+            { name: "Rocket League Championship Series Trophy", rarity: "Legacy" },
+            { name: "Dominus GT", rarity: "Import" },
+            { name: "Tachyon", rarity: "Very Rare" },
+            { name: "Black Dicey", rarity: "Exotic" },
+            { name: "Black Market Goal Explosion", rarity: "Black Market" },
+            { name: "Chameleon", rarity: "Exotic" },
+            { name: "Lightning", rarity: "Black Market" },
+            { name: "Yuzo", rarity: "Uncommon" },
+            { name: "Mystery Decal", rarity: "Black Market" },
+            { name: "Heatwave", rarity: "Black Market" },
+            { name: "Bubbly", rarity: "Black Market" },
+            { name: "Vortex", rarity: "Exotic" },
+            { name: "K2", rarity: "Import" },
+            { name: "Fire God", rarity: "Black Market" },
+            { name: "Neothermal", rarity: "Exotic" },
+            { name: "Turbine", rarity: "Rare" },
+            { name: "Gizmo", rarity: "Common" },
+            { name: "Fuzzy", rarity: "Uncommon" },
+            { name: "Rocket League Championship Series Banner", rarity: "Legacy" },
+            // **Full Rocket League Car Bodies**
+            { name: "Batmobile", rarity: "Import" },
+            { name: "Breakout", rarity: "Import" },
+            { name: "Takumi", rarity: "Import" },
+            { name: "Merc", rarity: "Uncommon" },
+            { name: "Plank", rarity: "Common" },
+            { name: "Road Hog", rarity: "Uncommon" },
+            { name: "Octane ZSR", rarity: "Import" },
+            { name: "Scarab", rarity: "Uncommon" },
+            { name: "Venom", rarity: "Uncommon" },
+            { name: "Vulcan", rarity: "Import" },
+            { name: "Dingo", rarity: "Import" },
+            { name: "Fennec", rarity: "Import" },
+            { name: "Nimbus", rarity: "Import" },
+            { name: "Mantis", rarity: "Import" },
+            { name: "Paladin", rarity: "Uncommon" },
+            { name: "Ripper", rarity: "Import" },
+            { name: "Shadow", rarity: "Rare" },
+            { name: "Twinzer", rarity: "Import" },
+            { name: "Breakout Type-S", rarity: "Import" },
+            { name: "Road Hog XL", rarity: "Rare" },
+            { name: "Ripper", rarity: "Import" },
+            { name: "Chikara", rarity: "Rare" },
+            { name: "Civic Type R", rarity: "Import" },
+            { name: "Triton", rarity: "Rare" },
+            { name: "Apex", rarity: "Exotic" },
+            { name: "Interstellar", rarity: "Exotic" },
+            { name: "Fennec (Titanium White)", rarity: "Exotic" }
+        ];
 
-        // Drop rates (as percentages)
-        const dropRates = {
-            "Common": 60,
-            "Uncommon": 20,
-            "Rare": 10,
-            "Very Rare": 5,
-            "Import": 3,
-            "Exotic": 1.5,
-            "Black Market": 0.5
-        };
-
-        // Function to simulate opening a drop
-        function openDrop() {
-            const dropResultDiv = document.getElementById("drop-result");
-            const rand = Math.random() * 100;
-
-            let cumulativeProbability = 0;
-            let selectedRarity;
-
-            // Determine which rarity the drop falls into based on the random value
-            for (const [rarity, rate] of Object.entries(dropRates)) {
-                cumulativeProbability += rate;
-                if (rand <= cumulativeProbability) {
-                    selectedRarity = rarity;
-                    break;
-                }
-            }
-
-            // Randomly pick an item based on the selected rarity
-            const selectedItem = items[selectedRarity][Math.floor(Math.random() * items[selectedRarity].length)];
-
-            // Display the result
-            dropResultDiv.innerHTML = `
-                <h3>Congratulations!</h3>
-                <p>You got a <strong>${selectedItem}</strong>! (Rarity: <strong>${selectedRarity}</strong>)</p>
-            `;
+        // Function to display the items in the table
+        function loadItems() {
+            const itemList = document.getElementById("item-list");
+            items.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `<td>${item.name}</td><td>${item.rarity}</td>`;
+                itemList.appendChild(row);
+            });
         }
+
+        // Load the items when the page loads
+        window.onload = loadItems;
     </script>
 </body>
 </html>
